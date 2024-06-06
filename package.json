@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "ts": "tsc -p ./tsconfig.json --noEmit",
+    "ts:watch": "tsc -p ./tsconfig.json --noEmit --watch",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"

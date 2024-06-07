@@ -1,3 +1,4 @@
+import React from 'react';
 import clsx from 'clsx';
 
 import { IHandleInputChange } from 'src/core/IHandlers';
@@ -18,15 +19,31 @@ const AppInput: React.FC<IAppInputProps> = ({
   placeholder,
   disabled,
 }) => {
+  const [isSelected, setIsSelected] = React.useState(false);
+
+  const hanbleFocus = () => setIsSelected(true);
+  const handleBlur = () => setIsSelected(false);
   return (
-    <input
-      className={clsx('app-input', className)}
-      type="text"
-      value={value}
-      placeholder={placeholder}
-      disabled={disabled}
-      onChange={onChange}
-    />
+    <div
+      className={clsx(
+        'app-input',
+        {
+          'app-input--selected': isSelected,
+        },
+        className,
+      )}
+    >
+      <input
+        className="app-input__inner"
+        type="text"
+        value={value}
+        placeholder={placeholder}
+        disabled={disabled}
+        onChange={onChange}
+        onFocus={hanbleFocus}
+        onBlur={handleBlur}
+      />
+    </div>
   );
 };
 

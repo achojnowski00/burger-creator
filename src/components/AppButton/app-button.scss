@@ -5,6 +5,22 @@
   padding: 20px 40px;
   color: $brown;
   background: $white;
+  border-radius: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: $black;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  &:hover::after {
+    opacity: 0.1;
+  }
 
   &:focus {
     outline: none;

@@ -19,7 +19,22 @@
     cursor: pointer;
     aspect-ratio: 1/1;
     border-radius: 50%;
+    overflow: hidden;
     padding: 5px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: white;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    &:hover::after {
+      opacity: 0.5;
+    }
 
     &--red {
       background: $lightRed;
@@ -39,8 +54,16 @@
     display: flex;
     place-items: center;
     padding: 20px;
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
     img {
       width: 100%;
+      transition: transform 0.2s;
     }
   }
 

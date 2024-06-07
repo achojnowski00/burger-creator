@@ -38,7 +38,7 @@ const IngredientInput: React.FC<IProps> = ({
           <img src={PlusIcon} alt="Remove" />
         </button>
       </div>
-      <div className="ingredient-input__image">
+      <div className="ingredient-input__image" onClick={onAdd}>
         <img src={imgUrl} alt={title} />
       </div>
       <div className="ingredient-input__title">{title}</div>

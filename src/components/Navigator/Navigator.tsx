@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { NavigatorRoutes } from './NavigatorRoutes';
 
-import './Navigator.scss';
+import './navigator.scss';
 
 type IProps = IComponent;
 

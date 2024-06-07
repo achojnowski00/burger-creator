@@ -16,7 +16,7 @@ export const IngirientsStateInitialState: IBurgerIngridient[] = [
     name: 'bottom bun',
     count: 0,
     url: BottomBun,
-    maxCount: 2,
+    maxCount: 1,
     isBottom: true,
     isTop: false,
     additionalStyles: {

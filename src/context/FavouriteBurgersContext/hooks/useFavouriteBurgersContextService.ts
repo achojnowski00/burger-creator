@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { LOCAL_STORAGE_FAVORITES_BURGERS_KEY } from 'src/CONSTANTS';
+
 import {
   IAddBurgerHandler,
   IFavouriteBurgersContext,

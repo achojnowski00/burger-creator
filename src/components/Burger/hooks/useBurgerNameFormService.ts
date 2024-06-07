@@ -41,9 +41,10 @@ export default function useBurgerNameFormService() {
 
       onAddBurger({
         name: inputValue,
-        ingredients: burgerState.map(({ url, name }) => ({
+        ingredients: burgerState.map(({ url, name, additionalStyles }) => ({
           name,
           url,
+          additionalStyles,
         })),
       })
         .then(() => {

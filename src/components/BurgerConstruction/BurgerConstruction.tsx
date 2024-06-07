@@ -2,10 +2,12 @@ import clsx from 'clsx';
 
 import { MAX_INGREDIENTS } from 'src/CONSTANTS';
 
-import { IIngridientInBurger } from 'src/core/IBurgerIngridient';
+import { IBasivBurgerIngridient } from 'src/core/IBurgerIngridient';
+
+import './burger-construction.scss';
 
 type IProps = IComponent & {
-  burger: IIngridientInBurger[];
+  burger: IBasivBurgerIngridient[];
 };
 
 const BurgerConstruction: React.FC<IProps> = ({ className, burger }) => {
@@ -13,7 +15,7 @@ const BurgerConstruction: React.FC<IProps> = ({ className, burger }) => {
     <div className={clsx('burger-construction', className)}>
       {burger.map(({ url, name, additionalStyles }, index) => (
         <div
-          className="burger__ingridient"
+          className="burger-construction__ingridient"
           key={`${name}_${index}`}
           style={{ ...additionalStyles, zIndex: MAX_INGREDIENTS - index }}
         >

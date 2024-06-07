@@ -6,14 +6,14 @@ import './app-button.scss';
 
 export type IAppButtonProps = IComponent & {
   disabled?: boolean;
-  text: string;
+  children: React.ReactNode;
   onClick?: IButtonClickHandler;
 };
 
-const AppButton: React.FC<IAppButtonProps> = ({ className, disabled, text, onClick }) => {
+const AppButton: React.FC<IAppButtonProps> = ({ className, disabled, children, onClick }) => {
   return (
     <button className={clsx('app-button', className)} onClick={onClick} disabled={disabled}>
-      {text}
+      {children}
     </button>
   );
 };

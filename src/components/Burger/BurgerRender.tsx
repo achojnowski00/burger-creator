@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import AppInfo from '../AppInfo';
 import BurgerNameForm from './items/BurgerNameForm';
 import AppHeader from '../AppHeader';
-import BurgerConstruction from './items/BurgerConstruction';
+import BurgerConstruction from '../BurgerConstruction';
 
 import { IIngridientInBurger } from 'src/core/IBurgerIngridient';
 import { IHandleFormSubmit, IHandleInputChange } from 'src/core/IHandlers';

@@ -26,9 +26,9 @@ export type IIngridientInBurger = Pick<
   'name' | 'url' | 'isTop' | 'isBottom' | 'additionalStyles'
 >;
 
-export type IFavoriteBurgerIngridient = Pick<IIngridientInBurger, 'name' | 'url'>;
+export type IBasivBurgerIngridient = Pick<IIngridientInBurger, 'name' | 'url' | 'additionalStyles'>;
 
 export type IFavoriteBurger = {
   name: string;
-  ingredients: IFavoriteBurgerIngridient[];
+  ingredients: IBasivBurgerIngridient[];
 };

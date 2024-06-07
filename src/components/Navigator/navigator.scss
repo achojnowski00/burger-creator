@@ -8,5 +8,19 @@
     place-items: center;
     background: $white;
     padding: 5px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: $black;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    &:hover::after {
+      opacity: 0.1;
+    }
   }
 }

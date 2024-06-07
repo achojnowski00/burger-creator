@@ -4,7 +4,7 @@
   "version": "0.4.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host --port 8888",
     "ts": "tsc -p ./tsconfig.json --noEmit",
     "ts:watch": "tsc -p ./tsconfig.json --noEmit --watch",
     "build": "tsc && vite build",

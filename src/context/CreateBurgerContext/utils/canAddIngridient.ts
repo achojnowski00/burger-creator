@@ -54,7 +54,7 @@ export default function canAddIngridient(
   if (currentBurgerState.length === MAX_INGREDIENTS - 1 && !newIngridient.isTop) {
     return {
       possible: false,
-      message: `the maximum number of items is 9 including buns. Last item must be top bun.`,
+      message: `the maximum number of ingredients is 9 including buns. Last ingredient must be top bun.`,
     };
   }
 

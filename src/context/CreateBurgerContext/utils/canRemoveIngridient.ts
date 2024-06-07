@@ -14,7 +14,7 @@ export default function canRemoveIngridient(
   if (count === 0) {
     return {
       possible: false,
-      message: `You don't have ${name} in your burger`,
+      message: `There is no ${name} in your burger`,
     };
   }
 

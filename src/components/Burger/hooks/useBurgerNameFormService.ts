@@ -35,7 +35,7 @@ export default function useBurgerNameFormService() {
       e.preventDefault();
 
       if (inputValue.trim() === '') {
-        setFormError('Burger name cannot be empty');
+        setFormError('Burger could not be saved. Burger name cannot be empty');
         return;
       }
 
@@ -56,7 +56,7 @@ export default function useBurgerNameFormService() {
           setSuccessMessage('Burger added to favourites');
         })
         .catch(() => {
-          setFormError("Couldn't add burger to favourites");
+          setFormError('Could not add burger to favourites');
         });
     },
     [burgerState, inputValue, onAddBurger, onResetBurger],

@@ -1,27 +1,13 @@
-# React + TypeScript + Vite
+# Burger Creator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple burger creator app that allows users to create their own burger and save it to favorites. Favorite burgers are saved to local storage and can be viewed on the favorites page.
 
-Currently, two official plugins are available:
+Live demo available on: [https://achojnowski00.github.io/burger-creator/favorites](https://achojnowski00.github.io/burger-creator/favorites)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- React
+- TypeScript
+- SASS / SCSS
+- Helper Libraries: React Router, clsx
+- Linters: ESLint, Prettier

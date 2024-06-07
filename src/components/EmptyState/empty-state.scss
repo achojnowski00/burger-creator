@@ -1,0 +1,10 @@
+.empty-state {
+  max-width: 600px;
+  margin: 0 auto;
+
+  &__text {
+    font-size: 48px;
+    color: $lightBlue;
+    text-align: center;
+  }
+}

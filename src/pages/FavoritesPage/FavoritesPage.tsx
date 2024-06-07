@@ -5,6 +5,7 @@ import { useFavouriteBurgersContext } from 'src/context/FavouriteBurgersContext'
 import AppHeader from 'src/components/AppHeader';
 import MaxWidthContentWrapper from 'src/components/MaxWidthContentWrapper';
 import FavoriteBurgerTile from 'src/components/FavoriteBurgerTile';
+import EmptyState from 'src/components/EmptyState';
 
 import { MAX_APP_WIDTH } from 'src/CONSTANTS';
 
@@ -24,6 +25,10 @@ const FavoritesPage = () => {
     <div className="favorites-page">
       <MaxWidthContentWrapper maxWidth={MAX_APP_WIDTH}>
         <AppHeader text="Favuorite Burgers" className="favorites-page__header" />
+
+        {favoriteBurgers.length === 0 && (
+          <EmptyState text="You don’t have any favourites burgers" />
+        )}
 
         <div className="favorites-page__list">
           {favoriteBurgers.map((burger) => (

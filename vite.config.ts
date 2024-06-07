@@ -19,7 +19,7 @@ export default defineConfig({
   resolve: {
     alias: {
       src: path.resolve('./src', ''),
-      // CONSTANTS: path.resolve('./src/', 'CONSTANTS.ts'),
+      CONSTANTS: path.resolve('./src/', 'CONSTANTS.ts'),
       assets: path.resolve('./src/', 'assets'),
       components: path.resolve('./src/', 'components'),
       pages: path.resolve('./src/', 'pages'),

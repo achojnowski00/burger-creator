@@ -1,0 +1,19 @@
+.app-input {
+  background: none;
+  border: none;
+  font-family: $fontFamily;
+  font-size: 36px;
+  padding: 10px 20px;
+  color: $white;
+  border-bottom: 1px solid transparent;
+
+  &:focus {
+    outline: none;
+    border-bottom-color: $white;
+  }
+
+  &::placeholder {
+    color: $white;
+    opacity: 0.5;
+  }
+}

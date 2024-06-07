@@ -1,0 +1,16 @@
+.app-info {
+  font-size: 24px;
+  text-align: center;
+
+  &--error {
+    color: $red;
+  }
+
+  &--success {
+    color: $green;
+  }
+
+  &--info {
+    color: $lightBlue;
+  }
+}

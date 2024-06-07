@@ -1,0 +1,21 @@
+.controll-panel {
+  --horizontal-gap: 40px;
+
+  display: flex;
+  gap: 20px var(--horizontal-gap);
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 50%;
+
+  @media (max-width: $mobileBreakpoint) {
+    width: 100%;
+  }
+
+  &__ingredient-input {
+    flex-basis: calc((100% - 2 * var(--horizontal-gap)) / 3);
+
+    @media (max-width: $smallScreenBreakpoint) {
+      flex-basis: calc((100% - var(--horizontal-gap)) / 2);
+    }
+  }
+}

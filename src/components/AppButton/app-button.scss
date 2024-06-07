@@ -1,0 +1,14 @@
+.app-button {
+  border: none;
+  font-family: $fontFamily;
+  font-size: 36px;
+  padding: 20px 40px;
+  color: $brown;
+  background: $white;
+  border-radius: 100%;
+
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid $white;
+  }
+}

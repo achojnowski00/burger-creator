@@ -1,0 +1,21 @@
+#root {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: $fontFamily;
+
+  color: $white;
+  background: $brown;
+}
+
+body {
+  margin: 0;
+  display: flex;
+}

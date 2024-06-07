@@ -17,7 +17,7 @@ export const NavigatorRoutes: INavigatorRoute[] = [
   },
   {
     path: ROUTES.favorites,
-    title: 'Your Favorite  Burgers',
+    title: 'Your Favuorite  Burgers',
     icon: <img src={HeartIcon} alt="Home Icon" />,
   },
 ];

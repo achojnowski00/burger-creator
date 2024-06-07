@@ -23,7 +23,7 @@
     "baseUrl": "./",
     "paths": {
       "src/*": ["src/*"],
-      // "CONSTANTS": ["src/CONSTANTS.ts"],
+      "CONSTANTS": ["src/CONSTANTS.ts"],
       "assets/*": ["src/assets/*"],
       "components/*": ["src/components/*"],
       "pages/*": ["src/pages/*"]

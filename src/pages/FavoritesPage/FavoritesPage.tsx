@@ -3,7 +3,7 @@ import AppHeader from 'src/components/AppHeader';
 const FavoritesPage = () => {
   return (
     <div>
-      <AppHeader text="Favorite Burgers" />
+      <AppHeader text="Favuorite Burgers" />
     </div>
   );
 };

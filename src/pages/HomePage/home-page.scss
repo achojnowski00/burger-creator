@@ -1,0 +1,16 @@
+.home-page {
+  &__header {
+    margin-bottom: 40px;
+  }
+
+  &__creator {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (max-width: $mobileBreakpoint) {
+      flex-direction: column;
+      gap: 100px;
+    }
+  }
+}

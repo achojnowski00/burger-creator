@@ -36,7 +36,5 @@ module.exports = {
         extensions: [',js', '.jsx', '.ts', '.tsx'],
       },
     ],
-    'prettier/prettier': 'error',
-    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
   },
 };

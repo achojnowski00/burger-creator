@@ -1,0 +1,12 @@
+.navigator {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__tile {
+    display: flex;
+    place-items: center;
+    background: $white;
+    padding: 5px;
+  }
+}

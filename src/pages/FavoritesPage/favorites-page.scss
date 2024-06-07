@@ -1,0 +1,15 @@
+.favorites-page {
+  --horizontal-gap: 80px;
+
+  &__header {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px var(--horizontal-gap);
+    align-items: flex-end;
+    justify-content: center;
+  }
+}

@@ -25,7 +25,7 @@ const BurgerNameForm: React.FC<IProps> = ({ className, onChange, formError, valu
         placeholder="input space"
       />
       {formError && <AppInfo text={formError} />}
-      <AppButton text="save" />
+      <AppButton>save</AppButton>
     </form>
   );
 };

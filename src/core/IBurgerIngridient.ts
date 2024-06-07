@@ -25,3 +25,10 @@ export type IIngridientInBurger = Pick<
   IBurgerIngridient,
   'name' | 'url' | 'isTop' | 'isBottom' | 'additionalStyles'
 >;
+
+export type IFavoriteBurgerIngridient = Pick<IIngridientInBurger, 'name' | 'url'>;
+
+export type IFavoriteBurger = {
+  name: string;
+  ingredients: IFavoriteBurgerIngridient[];
+};

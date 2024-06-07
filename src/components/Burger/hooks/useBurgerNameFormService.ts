@@ -1,9 +1,14 @@
 import React from 'react';
+
 import { useCreateBurgerContext } from 'src/context/CreateBurgerContext';
+import { useFavouriteBurgersContext } from 'src/context/FavouriteBurgersContext';
+
 import { IHandleFormSubmit, IHandleInputChange } from 'src/core/IHandlers';
 
 export default function useBurgerNameFormService() {
+  const { onAddBurger } = useFavouriteBurgersContext();
   const { onResetBurger, burgerState, error } = useCreateBurgerContext();
+
   const [inputValue, setInputValue] = React.useState<string>('');
   const [formError, setFormError] = React.useState<string>('');
   const [successMessage, setSuccessMessage] = React.useState<string>('');
@@ -34,14 +39,24 @@ export default function useBurgerNameFormService() {
         return;
       }
 
-      setInputValue('');
-      setSuccessMessage('Burger saved successfully');
-      // eslint-disable-next-line no-console
-      console.log('Save burger', inputValue);
-
-      onResetBurger();
+      onAddBurger({
+        name: inputValue,
+        ingredients: burgerState.map(({ url, name }) => ({
+          name,
+          url,
+        })),
+      })
+        .then(() => {
+          onResetBurger();
+          setInputValue('');
+          setFormError('');
+          setSuccessMessage('Burger added to favourites');
+        })
+        .catch(() => {
+          setFormError("Couldn't add burger to favourites");
+        });
     },
-    [inputValue, onResetBurger],
+    [burgerState, inputValue, onAddBurger, onResetBurger],
   );
 
   return {

@@ -21,6 +21,7 @@ export default function useCreateBurgerContextService(): ICreateBurgerContext {
   const onResetBurger = () => {
     setBurgerState([]);
     setIngridientsState(IngirientsStateInitialState);
+    setError(undefined);
   };
 
   const onAddIngridient = (ingridient: IBurgerIngridient) => {

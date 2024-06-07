@@ -1,5 +1,12 @@
+#root {
+  width: 100%;
+}
+
 :root {
-  font-family: Snowburst One, Arial, sans-serif;
+  font-family:
+    Snowburst One,
+    Arial,
+    sans-serif;
 
   color: #fefce7;
   background: #76564b;

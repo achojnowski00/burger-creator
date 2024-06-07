@@ -1,0 +1,1 @@
+type IComponent = { className?: string };

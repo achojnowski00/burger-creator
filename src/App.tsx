@@ -3,7 +3,7 @@ import { Suspense } from 'react';
 import './App.css';
 
 import Router from './Router';
-import AppLoader from './components/Loader';
+import AppLoader from './components/AppLoader';
 
 function App() {
   return (

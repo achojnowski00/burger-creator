@@ -2,12 +2,12 @@ import clsx from 'clsx';
 
 import { MAX_INGREDIENTS } from 'src/CONSTANTS';
 
-import { IBasivBurgerIngridient } from 'src/core/IBurgerIngridient';
+import { IBasicBurgerIngridient } from 'src/core/IBurgerIngridient';
 
 import './burger-construction.scss';
 
 type IProps = IComponent & {
-  burger: IBasivBurgerIngridient[];
+  burger: IBasicBurgerIngridient[];
 };
 
 const BurgerConstruction: React.FC<IProps> = ({ className, burger }) => {

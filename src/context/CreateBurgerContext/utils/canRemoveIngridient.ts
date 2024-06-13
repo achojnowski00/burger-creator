@@ -19,6 +19,16 @@ export default function canRemoveIngridient(
   }
 
   /**
+   * Check if user tries to remove any ingredient when top bun is on top of burger
+   */
+  if (currentBurgerState.some((ing) => ing.isTop) && !ingridientToRemove.isTop) {
+    return {
+      possible: false,
+      message: `Cannot remove ${ingridientToRemove.name} when top bun is on top`,
+    };
+  }
+
+  /**
    * Check when user tries to remove bottom bun, but there is another product on it
    */
   if (name === 'bottom bun') {

@@ -5,11 +5,17 @@ export type IBurgerIngridient = {
   additionalStyles?: React.CSSProperties;
   url: string;
   /**
-   * If the ingredient has other image on burger rathher than in the list
+   * If the ingredient has other image on burger rather than in the list
    * this field should be filled.
    */
   alternativeUrl?: string;
+  /**
+   * Number of specific ingredient in burger
+   */
   count: number;
+  /**
+   * Maximum number of specific ingredient in burger
+   */
   maxCount?: number;
   /**
    * Wether the ingredient is top bun
@@ -26,9 +32,9 @@ export type IIngridientInBurger = Pick<
   'name' | 'url' | 'isTop' | 'isBottom' | 'additionalStyles'
 >;
 
-export type IBasivBurgerIngridient = Pick<IIngridientInBurger, 'name' | 'url' | 'additionalStyles'>;
+export type IBasicBurgerIngridient = Pick<IIngridientInBurger, 'name' | 'url' | 'additionalStyles'>;
 
 export type IFavoriteBurger = {
   name: string;
-  ingredients: IBasivBurgerIngridient[];
+  ingredients: IBasicBurgerIngridient[];
 };

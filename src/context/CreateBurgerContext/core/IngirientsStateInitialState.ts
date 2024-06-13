@@ -8,6 +8,8 @@ import Fish from 'src/assets/fish.png';
 import Lettuce from 'src/assets/lettuce.png';
 import CheeseIcon from 'src/assets/ingredient-cheese.png';
 import Cheese from 'src/assets/cheese.png';
+import CucumberIcon from 'src/assets/ingredient-cucumber.png';
+import Cucumber from 'src/assets/cucumber.png';
 
 import { IBurgerIngridient } from 'src/core/IBurgerIngridient';
 
@@ -38,6 +40,18 @@ export const IngirientsStateInitialState: IBurgerIngridient[] = [
     name: 'tomato',
     count: 0,
     url: Tomato,
+    isBottom: false,
+    isTop: false,
+    additionalStyles: {
+      marginBottom: '-35px',
+    },
+  },
+  {
+    name: 'cucumber',
+    count: 0,
+    maxCount: 2,
+    url: Cucumber,
+    alternativeUrl: CucumberIcon,
     isBottom: false,
     isTop: false,
     additionalStyles: {
